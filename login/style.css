@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:ital,wght@0,200;0,400;0,700;1,400&family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Source Sans Pro' , sans-serif;
+}
+
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background: url(../img/fondo-login.jpg) no-repeat ;
+    background-size: cover; 
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.877);
+    width: 600px;
+    height: 100vh;
+    border-right: 3px solid rgba(187, 186, 186, 0.801);
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 30px;
+}
+
+
+
+.logo-empresa img {
+    height: 120px;
+}
+
+.card .span {
+    color: rgb(120, 228, 144);;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border: 3px solid rgb(120, 228, 144);
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.card h2 {
+    color: black;
+    font-weight: 900;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    padding: 10px  10px 10px;
+    border-radius: 5px;
+    color: #626262;
+    border: 1px solid var(--color-fuente);
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid green;
+    box-shadow: 0px 0px 5px 5px #C5E5CC;
+}
+
+.form-input:nth-child(2):focus {
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px 5px #F4C9CD;
+}
+
+.condiciones {
+    font-size: 20px;
+    color: black;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.condiciones input {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+a {
+    color: rgb(74, 74, 223);
+}
+
+.form-submit {
+    background: #78C47B;
+    padding: 15px;
+    border: #78C47B;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background: #41af45;
+    box-shadow: 2px 10px #9dffa03a;
+}
+
+.opciones {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.cuentas {
+    height: 40px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.cuentas img {
+    height: 50px;
+}    
+
+.cuentas img:hover {
+    transform: scale(1.1);
+}
+
+.acceder-cuenta {
+    color: black;
+    font-weight: 900;
+}
+
+
+@media (max-width: 770px) {
+    .card {
+        background: #fff;
+        width: 100vw;
+    }
+
+    .form-input {
+        border: 1px solid #626262;
+    }
+} 
