@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regístrate</title>
+    <title>Iniciar sesión</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <section class="container">
             <div class="card">
-                <div class="logo-empresa">
+                <span class="logo-empresa">
                     <img src="./img/logo-empresa.jpg" alt="logo empresa">
-                </div>
-                <span class="span">
-                    +
                 </span>
+                <span class="login-icon"><img src="./img/login-icon.png" alt="imagen del"></span>
                 <h2>
-                    Regístrate
+                    Inicia sesión
                 </h2>
                 <form class="form">
-                    <input type="email" placeholder="Tu correo electrónico" class="form-input">
+                    <input type="text" placeholder="Usuario" class="form-input">
                     <input type="password" placeholder="Tu contraseña (Mínimo 6 caracteres)" class="form-input">
-                    <div class="condiciones">
-                        <input type="checkbox" name="legales"><span>He leído y acepto los <a href="#">términos del servicio</a> y la <a href="#">política de privacidad</a>.</span>
+                    <label class="recuerdame">
+                        <input type="checkbox" name="">
+                        Recuérdame
+                    </label>
+                    <div class="validacion">
+                        <label ><input type="checkbox" name="validacion"> No soy un robot</label>
+                        <img src="./img/recaptcha-icon.png" alt="logo captcha">
                     </div>
-                    <input type="submit" value="Registrate" class="form-submit">
+                    <input type="submit" value="Inicia sesión" class="submit">
                 </form>
-                <div class="opciones">
-                    <span>o registrate con</span>
+                <a href="#">¿Has olvidado tu contraseña?</a>
+                <span class="opciones">o inicia sesión con</span>
+                <div class="redes">
+                    <img src="./img/logo-google.png" alt="logo google">
+                    <img src="./img/logo-facebook.png" alt="logo facebook">
                 </div>
-                <div class="cuentas">
-                    <a href="#">
-                        <img src="./img/logo-google.png" alt="logo google">
-                    </a>
-                    <a href="">
-                        <img src="./img/logo-facebook.png" alt="logo facebook" class="logo-facebook">
-                    </a>
-                </div>
-                <span class="acceder-cuenta">Si ya estás registrado, accede a <a href="#">tu cuenta</a></span>
+                <h3>
+                    Si no tienes cuenta, <a href="#">regístrate</a>
+                </h3>
+                <h3>
+                    He leído y acepto los <a href="#">términos del servicio</a> y la <a href="#">política de privacidad</a>.
+                </h3>
             </div>
         </section>
     </header>
