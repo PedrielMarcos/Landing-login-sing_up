@@ -99,7 +99,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    max-width: 300px;
     gap: 80px;
     padding: 10px;
     margin: auto;
@@ -174,6 +174,10 @@ h3 {
 
      .validacion {
         background: #f5f4f4a2;
-        box-shadow: 0px 0px 1px 1px #ccc9c994;
+        box-shadow: 0px 0px 1px 1px #ccc9c994; 
+     }  
+
+     h3 {
+        text-align: center;
      }
 }
