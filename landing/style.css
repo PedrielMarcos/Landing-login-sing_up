@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:ital,wght@0,200;0,400;0,700;1,400&family=Source+Sans+Pro:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700;900&family=Poppins:ital,wght@0,200;0,400;0,700;1,400&family=Source+Sans+Pro:wght@200&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+                       /* navbar */
+
+.navbar {
+    background: #1D4D8B;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+
+.menú-logo img {
+    height: 60px;
+    background: white;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+  /* menú toggle */
+
+.menú-toggle {
+    display: none;
+}  
+
+.menú-list {
+    height: 20vh;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.menú-list ul li {
+    list-style: none;
+    color: white;
+    font-size: 50px;
+    padding-bottom: 30px;
+    transform: translateY(-500px);
+    opacity: 0;
+}
+
+.menú-toggle input {
+     display: none;
+}
+
+.menú-toggle label {
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menú-toggle label > div {
+    background-color: white;
+    height: 5px;
+    width: 35px;
+    margin: 5px;
+}
+
+#toggle-nav:checked ~ .menú-list {
+    height: 100vh;
+    width: 700px;
+    background: #1a1a48;
+    z-index: 1;
+    margin-left: -200px;
+    margin-top: -15px;
+}
+
+#toggle-nav:checked ~ label {
+    left: 450px;
+}
+
+#toggle-nav:checked ~ .menú-list ul li {
+    transform: translateY(0);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle-nav:checked ~ label > div:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: 18px;
+}
+
+#toggle-nav:checked ~ label > div:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: -20px;
+}
+
+#toggle-nav:checked ~ label > div:nth-child(2) {
+    opacity: 0;
+}
+
+  /* navbar lista */
+
+.nav-list img {
+     height: 35px; 
+     background-color: white;
+     border-radius: 100%;
+     padding: 5px;
+}
+
+.nav-list {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-list ul {
+    display: flex;
+    margin-right: 15px;
+}
+
+.nav-list ul li{
+    padding: 34px 30px;
+}
+
+.nav-list ul li:nth-child(1) {
+    border-bottom: 5px solid rgb(255, 164, 180);
+}
+
+.nav-list ul li:nth-child(2) {
+    border-bottom: 5px solid chartreuse;
+}
+
+.nav-list ul li:nth-child(3) {
+    border-bottom: 5px solid rgb(182, 93, 93);
+}
+
+.nav-list ul li:hover {
+    background: #193f72;
+}
+
+.nav-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-list a input {
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-list a input:hover {
+    transform: scale(1.2);
+}
+
+.nav-list a img:hover {
+    transform: scale(1.2);
+}
+
+        /* Portada */
+.portada {
+    background: url(./img/fondo-portada.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+
+.card {
+    background: #467dc577;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+.card h2 {
+    font-size: 30px;
+}
+
+.card-form {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form-radio {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;  
+}
+
+.form-radio label {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.form-radio input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form-ruta {
+    width: 100%;
+}
+
+.form-date {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.form-date input {
+    margin-left: 5px;
+}
+
+.card-form input {
+    border: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-form input:focus {
+    outline: none;
+}
+
+.form-check_date {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.form-check_date input {
+    width: 20px;
+    height: 20px;
+}
+
+.form-clase {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-submit {
+    width: 100%;
+    color: #FFFFFF;
+    background: rgb(255, 184, 54);
+}
+
+.form-submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px rgba(255, 185, 54, 0.589);
+}
+
+.presentacion {
+    color: #FFFFFF;
+    width: 40vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    padding: 30px;
+    gap: 30px;
+}
+
+.presentacion h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.presentacion h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+@media (max-width: 770px) {
+    /* NAVBAR */
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .menú-logo img{
+        margin-left: 35vw;
+    }
+
+    .menú-toggle {
+        display: contents;
+    }
+
+    /* .menú-toggle label {
+        margin-left: 30px;
+    } */
+
+    .nav-list ul{
+        display: none;
+    }
+
+    .presentacion {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .menú-toggle {
+        padding-right: 40px;
+    }
+
+
+    #toggle-nav:checked ~ label {
+        left: 75vw;
+    }
+
+    .nav-list a input {
+        display: none;
+    }
+}

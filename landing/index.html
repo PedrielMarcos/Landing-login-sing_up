@@ -5,8 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+          <!-- navbar -->
+    <nav class="navbar">
+        <section class="menú-logo">
+            <div class="menú-toggle">
+                <input type="checkbox" id="toggle-nav">
+                <label for="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <div class="menú-list">
+                    <ul>
+                        <li>Home</li>
+                        <li>Destinos</li>
+                        <li>Nosotros</li>
+                        <li>Contactos</li>
+                        <li>Legales</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="logo-empresa">
+                <img src="./img/logo-empresa.jpg" alt="logo empresa">
+            </div>
+        </section>
+        <section class="nav-list">
+            <ul>
+                <li>
+                    Destinos
+                </li>
+                <li>
+                    Contactos
+                </li>
+                <li>
+                    Legales
+                </li>
+                
+            </ul>
+            <a href="https://iniciar-sesion.vercel.app/" target="_blank"><input type="submit" value="Ingresar">
+            <img src="./img/login-icon.png" alt="login icono"></a>
+            
+        </section>  
+    </nav>
+        <!-- Portada -->
+    <header class="portada">
+        <section class="card">
+            <h2>Vuelos</h2>
+            <form class="card-form">
+                <div class="form-radio">
+                    <label for="ida-y-vuelta">
+                        Ida y vuelta
+                        <input type="radio" name="destino" id="ida-y-vuelta">
+                    </label>
+                    <label for="solo-ida">
+                        Solo ida
+                        <input type="radio" name="destino" id="solo-ida">
+                    </label>
+                    <label for="multidestino">
+                        Multidestino
+                        <input type="radio" name="destino" id="multidestino">
+                    </label>
+                </div>
+                <input type="text" placeholder="Origen - Ingresá ciudad, país o región" class="form-ruta">
+                <input type="text" placeholder="Destino - Ingresá ciudad, país o región" class="form-ruta">
+                <div class="form-date">
+                    <label for="date-ida">
+                        Ida
+                        <input type="date" name="" id="date-ida">
+                    </label>
+                    <label for="date-vuelta">
+                        Vuelta
+                        <input type="date" name="" id="date-vuelta">
+                    </label>  
+                </div>
+                <div class="form-check_date">   
+                    <input type="checkbox" name="" id="sin-fecha">
+                    <label for="sin-fecha">Aún no dicidí fecha</label>
+                </div>
+                <div class="form-clase">
+                    <input type="number" placeholder="Pasajero/s">
+                    <input type="text" placeholder="Clase: Económica o Ejecutiva">
+                </div>
+                <input type="submit" value="Buscar" class="form-submit">
+            </form>
+        </section>
+        <section class="presentacion">
+            <h1>! Escápate ¡, nosotros te ayudamos.</h1>
+            <h2>Somos la agencia de viaje más elegida del pais, con mas de 1500 destinos nacionales como internacionales. </h2>
+        </section>
+    </header>
 </body>
 </html>
