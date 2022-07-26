@@ -35,18 +35,18 @@
         <section class="nav-list">
             <ul>
                 <li>
-                    Destinos
+                   <a href="#destinos">Destinos</a> 
                 </li>
                 <li>
-                    Contactos
+                    <a href="#contactos">Contactos</a>
                 </li>
                 <li>
-                    Legales
+                    <a href="#footer">Legales</a>
                 </li>
                 
             </ul>
-            <a href="https://iniciar-sesion.vercel.app/" target="_blank"><input type="submit" value="Ingresar">
-            <img src="./img/login-icon.png" alt="login icono"></a>
+            <a href="https://iniciar-sesion-1cpj.vercel.app/" target="_blank"><input type="submit" value="Ingresar">
+            <a href="https://iniciar-sesion-1cpj.vercel.app/" target="_blank" ><img src="./img/login-icon.png" alt="login icono"></a></a>
             
         </section>  
     </nav>
@@ -98,7 +98,9 @@
         </section>
     </header>
        <!-- Destinos nacionales e Internacionles -->
+       <a name="destinos"></a>
     <h2 class="encabezado-destinos">Los mejores precios de vuelos a destinos nacionales</h2>
+    
     <section class="destinos-nacionales">
         <div>Salta</div>
         <div>San Carlos de Bariloche</div>
@@ -130,7 +132,40 @@
     </section>
         <!-- Contactos y redes -->
     <section class="contactos">
-        <h3>Contactanos y seguinos por nuestras redes</h3>
+        <a name="contactos"></a>
+        <h3>Para un asesoramiento personal acercate a nuestra sucursal o contactanos por nuestras redes sociales</h3>
+        <div class="map-form">
+            <div class="map1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2051.7993954089716!2d-58.44920286381789!3d-34.545901531377645!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1658847080925!5m2!1ses-419!2sar" width="500" height="395" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2051.7993954089716!2d-58.44920286381789!3d-34.545901531377645!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1658847080925!5m2!1ses-419!2sar" width="300" height="395" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2051.7993954089716!2d-58.44920286381789!3d-34.545901531377645!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1658847080925!5m2!1ses-419!2sar" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="card-contactos">
+               <p>
+                Un asesor <b>se pondrá en contacto contigo</b>
+               </p>
+               <form class="form-contactos">
+                <div class="datos_personales">
+                    <input type="text" placeholder="Nombres*"></input>
+                    <input type="text" placeholder="Apellidos*"></input>
+                    <input type="email" placeholder="Email*"></input>
+                    <input type="tel" placeholder="Teléfono*"></input>
+                    <input type="text" placeholder="Provincia*"></input>
+                    <input type="text" placeholder="País*"></input>
+                </div>
+                <textarea  id="" cols="30" rows="5" placeholder="Comentarios*" class="comentarios"></textarea>
+                <label>
+                    <input type="checkbox" class="checkbox-contactos">
+                      Acepto la <a href="#">política de privacidad</a>
+                </label>
+                <input type="submit" value="contactar  asesor" class="btn-form-contactos">
+               </form> 
+            </div>
+        </div>
         <div class="logo-redes">
             <span>
                 <img src="./img/gmail-logo.png" alt="logo gmail">
@@ -163,7 +198,7 @@
     </section>
       <!-- Footer -->
     <footer class="footer">
-        <div class="sobre-nosotros">
+        <div class="sobre-nosotros"><a name="footer"></a>
             <span>
                 <b>
                     Sobre Escápate.com

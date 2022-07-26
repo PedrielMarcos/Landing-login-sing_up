@@ -137,8 +137,9 @@ body {
     margin-right: 15px;
 }
 
-.nav-list ul li{
+.nav-list ul li a {
     padding: 34px 30px;
+    color: #FFFFFF;
 }
 
 .nav-list ul li:nth-child(1) {
@@ -545,14 +546,94 @@ body {
     padding: 30px 30px;
 }
 
+.map-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.card-contactos {
+    background: #FFF4EB;
+    border: 1px solid #FF7E0C;
+    width: 500px;
+}
+
+.card-contactos p {
+    background: #FF7E0C;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.form-contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 5% 5%; 
+    color: black;
+    width: 100%; 
+}
+
+.comentarios {
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    width: 95%;
+    height: 90px;
+}
+
+.datos_personales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 95%;
+    /* background: red; */
+}
+
+.datos_personales input {
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    width: 100%;
+}
+
+.form-contactos label a {
+    color: #FF7E0C;
+}
+
+.btn-form-contactos {
+    color: #FFFFFF;
+    padding: 15px 60px ;
+    background-color: #FF7E0C;
+    border: 1px solid #FF7E0C;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-form-contactos:hover {
+    box-shadow: 0 0 5px 5px #ff7d0c48;
+}
+
+.map2 {
+    display: none;
+}
+
+.map3 {
+    display: none;
+}
+
 .logo-redes {
+    background: #e5ecf3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0 30px;
-    padding-bottom: 40px;
+    padding: 50px 30px;
 }
 
 .contactos span img {
@@ -631,6 +712,18 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 5vw;
     }
+
+    .map1 {
+        display: none;
+    }
+
+    .map2 {
+        display: contents;
+    }
+
+    .card-contactos {
+        width: 300px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -666,6 +759,19 @@ body {
     .destinos-internacionales {
         grid-template-columns: 1fr 1fr  ;
     }
+
+    .map-form {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* .map2 {
+        display: none;
+    }
+
+    .map1 {
+        display: contents;
+    } */
 }
 
 @media (max-width: 500px) {
@@ -705,5 +811,22 @@ body {
     /* Footer */
     .footer {
         gap: 50px;
+    }
+
+    .map2 {
+        display: none;
+    }
+
+    .map3 {
+        display: contents;
+    }
+
+    .card-contactos {
+        width: 250px;
+        margin: 0 30px;
+    }
+
+    .btn-form-contactos {
+        padding: 10px 20px;
     }
 }
